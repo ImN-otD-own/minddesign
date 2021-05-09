@@ -82,3 +82,24 @@ function showModalll() {
         }
     });
 }
+
+let photos = [   
+    'img/olen1.jpg',
+    'img/back3.jpg',
+    'img/back2.jpg',
+    'img/gal4.jpg',
+    'img/oboitut.com_1509704307.jpg',
+    'img/back4.jpg'
+];
+  
+let button = document.querySelectorAll('.button');
+let fullphoto = document.querySelector('.gallery__photo-full')
+let ClickHandler = function (but, photo) {
+    but.addEventListener('click', function () {
+      fullphoto.src = photo;
+    });
+};
+  
+for (let i = 0; i < button.length; i++) {
+    ClickHandler(button[i], photos[i]);
+}
