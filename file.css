@@ -89,6 +89,8 @@ body {
     justify-content: space-between;
 }
 .about_first_block_ikons {
+    display: flex;
+    flex-direction: column;
     width: 27%;
     /* height: 800px; */
     background-color: #2C2335;
@@ -102,6 +104,11 @@ body {
     margin-left: 3%;
 }
 .about_first_block_ikons_content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%; /* float */
+}
+.about_first_block_ikons_contentright {
     display: flex;
     flex-direction: row;
     margin-bottom: 10%; /* float */
@@ -132,6 +139,7 @@ body {
     font-size: larger;
     font-weight: 100;
     margin-right: 3%;
+    float: right;
 }
 .about_first_block_ikons_content_text_text {
     width: 100%;
@@ -478,6 +486,7 @@ body {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 100%;
+    margin-left: 1.5%;
 }
 .footer_base {
     display: flex;
@@ -521,13 +530,174 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024)  {
+@media (max-width: 1024px)  {
     body {
         width: 100%;
-        background-color: #0ee019;
     }
+    .header {
+        height: 400px;
+    }
+    .header_base {
+        margin-top: 6em;
+        margin-left: 3em;
+    }
+    .about_first_block {
+        flex-direction: column;
+    }
+    .about_first_block_ikons {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .about_first_block_ikons_content {
+        margin-bottom: 0px;
+        width: 32%;
+        margin-right: 0px;
+        align-items: center;
+    }
+    .about_first_block_ikons_contentright {
+        flex-direction: row-reverse;
+        margin-bottom: 0px;
+        width: 32%;
+        margin-right: 0px;
+        align-items: center;
+    }
+    .about_first_block_ikons_content_text {
+        font-size: large;
+    }
+    .about_first_block_ikons_content_text_right {
+        font-size: large;
+        margin-right: 0px;
+        margin-left: 3%;
+    }
+    .about_first_block_ikons_content_img {
+        padding: 1%;
+    }
+    .about_first_block_ikons_content_img img {
+        width: 100px;
+        height: 100px;
+    }
+    .about_column {
+        margin-left: 0px;
+        margin-top: 3%;
+        width: 100%;
+    }
+
     .about_second_block {
         display: flex;
         flex-direction: column;
+    }
+    .about_second_block_left {
+        flex-direction: row;
+        width: 100%;
+    }
+    .about_second_block_left_top {
+        width: 50%;
+        margin-bottom: 0px;
+        margin-right: 3%;
+    }
+    .about_second_block_left_top_base_img {
+        top: -15px;
+    }
+    .about_second_block_left_bottom {
+        width: 47%;
+    }
+    .about_second_block_right {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 3%;
+    }
+    .about_second_block_right_top {
+        margin-bottom: 3%;
+    }
+    .about_second_block_right_bottom_right_img {
+        top: -15px;
+    }
+
+    .menu {
+        height: 350px;
+    }
+    .footer {
+        height: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        height: 300px;
+    }
+    .header_top {
+        justify-content: space-evenly;
+    }
+    .header_base {
+        margin-left: 3%;
+        margin-top: 2.2em;
+    }
+    .about_first_block_ikons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .about_first_block_ikons_content {
+        width: 40%;
+    }
+    .about_first_block_ikons_contentright {
+        width: 40%;
+    }
+    .about_first_block_work {
+        height: 300px;
+    }
+    .about_first_block_work_content_text {
+        font-size: larger;
+    }
+    .about_first_block_content {
+        height: 300px;
+    }
+    .about_first_block_content_text {
+        font-size: larger;
+    }
+
+    .about_second_block_left_top_base_text {
+        font-size: larger;
+    }
+    .about_second_block_right_top_img {
+        height: 300px;
+    }
+    .about_second_block_right_top_img img {
+        width: 300px;
+        height: 300px;
+    }
+    .about_second_block_right_top_content_text {
+        font-size: larger;
+    }
+    .about_second_block_right_bottom_left h3 {
+        font-size: larger;
+    }
+    .about_second_block_right_bottom_right_text {
+        font-size: larger;
+    }
+
+    .menu {
+        height: 250px;
+    }
+    .menu_buttons_button {
+        height: 60px;
+    }
+    .menu_searches_search {
+        height: 60px;
+    }
+    .menu_buttons_button_name {
+        font-size: x-large;
+    }
+    .menu_searches_search_name {
+        font-size: x-large;
+    }
+
+    .footer_top_content {
+        font-size: small;
+    }
+    .firstpart_titlle {
+        font-size: medium;
+    }
+    .firstpart_content {
+        font-size: small;
     }
 }
