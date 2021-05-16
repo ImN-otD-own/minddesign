@@ -113,3 +113,17 @@ btn_burger.addEventListener('click', function(e) {
     header_links.classList.toggle('header_top_links_active');
     header.classList.toggle('header_active');
 });
+
+let body = document.querySelector('.body');
+let gallery = document.querySelector('.gallery__photo-full');
+let footer = document.querySelector('.footer');
+let first_content = document.querySelector('.about_first_block_content');
+let block_ikons = document.querySelector('.about_first_block_ikons');
+let theme_button = document.querySelector('.header_top_button');
+theme_button.addEventListener('click', function (e) {
+    body.classList.toggle('body-dark');
+    block_ikons.classList.toggle('about_first_block_ikons-dark');
+    first_content.classList.toggle('about_first_block_content-dark');
+    /* gallery.classList.toggle('gallery__photo-full-dark'); */
+    footer.classList.toggle('footer-dark');
+});
