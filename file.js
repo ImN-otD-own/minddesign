@@ -104,3 +104,12 @@ fullphoto.src = photo;
 for (let i = 0; i < button.length; i++) {
 ClickHandler(button[i], photos[i]);
 }
+
+let header = document.querySelector('.header');
+let header_links = document.querySelector('.header_top_links');
+let btn_burger = document.querySelector('.burger-btn');
+btn_burger.addEventListener('click', function(e) {
+    btn_burger.classList.toggle('burger-btn_active');
+    header_links.classList.toggle('header_top_links_active');
+    header.classList.toggle('header_active');
+});
