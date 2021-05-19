@@ -619,6 +619,7 @@ body {
     height: 100px;
     border-bottom: 1px solid #F6F1EA;
     align-items: center;
+    justify-content: space-between;
 }
 .footer-dark .footer_top {
     border-bottom: 1px solid #000;
@@ -629,6 +630,20 @@ body {
     font-weight: 400;
     font-size: 100%;
     margin-left: 1.5%;
+    width: 67%;
+}
+.footer_top_button {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+.footer_top_button a {
+    text-decoration: none;
+    color: #F6F1EA;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: larger;
+    margin-right: 3%;
 }
 .footer_base {
     display: flex;
@@ -873,6 +888,9 @@ body {
 }
 
 @media (max-width: 425px) {
+    .footer_top_button a {
+        font-size: large;
+    }
     .header_top_links {
         display: none;
     }
@@ -940,7 +958,7 @@ body {
         padding-right: 3%;
     }
     .header_active {
-        height: 136px;
+        height: 155px;
         transition: 0.5s;
     }
     .header_top {
