@@ -37,6 +37,11 @@ body {
     width: 100%;
     padding: 3%;
 }
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .comments_input {
     width: 100%;
     display: flex;
@@ -68,4 +73,43 @@ body {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: larger;
+}
+.users_comments {
+    margin-top: 30px;
+}
+.user_com {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    color: #000000;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: larger;
+    background-color: #d1cac0;
+    border-radius: 60px;
+}
+.user_com:hover {
+    background-color: #dfd5c8;
+}
+@media (max-width: 425px) {
+    .comment_field {
+        width: 60%;
+    }
+    .comment_button {
+        width: 37%;
+    }
+    .comment_button p {
+        font-size: large;
+    }
+    .user_com {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
